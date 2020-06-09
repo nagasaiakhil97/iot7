@@ -1,0 +1,15 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>
+			Raspberry Pi-DHT22
+		</ion-title>
+	</ion-navbar>
+</ion-header>	
+
+
+<ion-content padding>
+	<button ion-button (click)="dht22_read()">get Temp & Humid</button>
+	<div *ngIf="loading">loading...</div>
+	<h4>Temperature=: {{ temp }}</h4>
+	<h6>Humidity=: {{ humidity }}</h6>
+	</ion-content>
